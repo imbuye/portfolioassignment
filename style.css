@@ -1,0 +1,571 @@
+/* Base styles */
+  
+  /* Global Body Background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.3s ease, color 0.3s ease;
+    background-color: #fae0fa; /* Light Blue Background */
+  }
+  
+  /* Dark Mode */
+  .dark-mode {
+    background-color: #01579B; /* Dark Blue */
+    color: #EEE;
+  }
+  
+  .dark-mode header {
+    background-color: #0288D1; /* Darker Blue for header */
+  }
+  
+  
+  /* Header */
+header {
+    background-color: #ffffff; /* White Background for Light Mode */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #333; /* Dark text */
+    font-weight: 500;
+  }
+  
+  /* Dark Mode Navigation */
+  .dark-mode .nav-links li a {
+    color: #EEE; /* Light color in Dark Mode */
+  }
+  
+  /* Logo */
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #F4BFD2; /* Light Pink */
+  }
+  
+  /* Dark Mode Logo */
+  .dark-mode .logo {
+    color: #F48FB1; /* Light Pink in Dark Mode */
+  }
+  
+  /* Buttons */
+  .btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #F4BFD2; /* Light Pink */
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .btn:hover {
+    transform: scale(1.05);
+    background-color: #F06292; /* Slightly darker pink on hover */
+  }
+  
+  /* Dark Mode Buttons */
+  .dark-mode .btn {
+    background-color: #F48FB1; /* Light Pink */
+  }
+  
+  .dark-mode .btn:hover {
+    background-color: #F06292; /* Darker Pink on hover */
+  }
+  
+  
+ /* About Section */
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: #E0F7FA; /* Light Blue */
+  }
+  
+  /* Dark Mode About Section */
+  .dark-mode .about {
+    background-color: #0288D1; /* Darker Blue for Dark Mode */
+  }
+  
+  
+  .profile-card {
+    text-align: center;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .bio {
+    max-width: 600px;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .bio ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .bio ul li {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+  }
+  
+  /* Dark Mode */
+  .dark-mode .profile-card {
+    background: #222;
+    color: #eee;
+  }
+  .projects {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  /* Project Cards */
+.project-card {
+    width: 300px;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+    background-color: #F4BFD2; /* Light Pink on hover */
+  }
+  
+  .project-card h3 {
+    color: #F48FB1; /* Light Pink for Titles */
+  }
+  
+  .project-card p {
+    color: #666;
+  }
+  
+  /* Dark Mode Project Cards */
+  .dark-mode .project-card {
+    background: #333;
+    color: #EEE;
+  }
+  
+  .dark-mode .project-card:hover {
+    background-color: #F48FB1; /* Light Pink on hover */
+  }
+  
+  
+  .project-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .project-card h3 {
+    margin: 1rem 0;
+  }
+  
+  .project-card p {
+    color: #666;
+  }
+  
+  .dark-mode .project-card {
+    background: #222;
+    color: #eee;
+  }
+  .resume {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+ /* Resume Section */
+.resume {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #E0F7FA; /* Light Blue */
+  }
+  
+  .resume-section {
+    background: #fff;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Dark Mode Resume Section */
+  .dark-mode .resume-section {
+    background: #222;
+    color: #EEE;
+  }
+  
+  .resume-section h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #F48FB1; /* Light Pink */
+  }
+  
+  .resume-section p {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  .resume-section ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0.5rem;
+  }
+  
+  .resume-section ul li {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+  }
+  
+  .skills {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+  .skill-category {
+    margin: 2rem 0;
+  }
+  
+  .skill-category h2 {
+    margin-bottom: 1rem;
+    color: #F4BFD2;
+  }
+  
+  .skill-category ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skill-category ul li {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  
+  /* Dark Mode */
+  .dark-mode .skill-category {
+    background: #222;
+    color: #eee;
+  }
+  .resume {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+  .resume-section {
+    background: #fff;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .resume-section h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #F4BFD2;
+  }
+  
+  .resume-section p {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  .resume-section ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0.5rem;
+  }
+  
+  .resume-section ul li {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+  }
+  
+  /* Dark Mode Styles */
+  .dark-mode .resume-section {
+    background: #222;
+    color: #eee;
+  }
+  
+  .dark-mode .resume-section h3 {
+    color: #88D9E6;
+  }
+  .contact {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+  .contact-details p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .contact-form label {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .contact-form button {
+    padding: 0.8rem 1.5rem;
+    background-color: #F4BFD2;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Dark Mode */
+  .dark-mode .contact {
+    background: #222;
+    color: #eee;
+  }
+  
+  .dark-mode .contact-form input,
+  .dark-mode .contact-form textarea {
+    background: #333;
+    color: #eee;
+    border-color: #555;
+  }
+  
+  .dark-mode .contact-form button {
+    background-color: #88D9E6;
+  }
+  .testimonials {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+  .testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .testimonial-card {
+    background: #ffffff;
+    padding: 1.5rem;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .testimonial-card p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .testimonial-card .author {
+    font-size: 1rem;
+    font-style: italic;
+    color: #777;
+  }
+  
+  .dark-mode .testimonial-card {
+    background: #222;
+    color: #eee;
+  }
+  
+  .dark-mode .testimonial-card p {
+    color: #ddd;
+  }
+  
+  .dark-mode .testimonial-card .author {
+    color: #bbb;
+  }
+  /* Global Background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.3s ease, color 0.3s ease;
+    background-color: #f0f0f0; /* Light Gray Background */
+  }
+  /* Dark Mode */
+.dark-mode {
+    background-color: #01579B; /* Dark Blue for Dark Mode */
+    color: #EEE;
+  }
+  
+  .dark-mode header {
+    background-color: #0288D1; /* Darker Blue for the header */
+  }
+  
+  .dark-mode .nav-links li a {
+    color: #EEE;
+  }
+  
+  .dark-mode .logo {
+    color: #F48FB1; /* Light Pink Logo in Dark Mode */
+  }
+  /* Header Logo */
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #F48FB1; /* Light Pink */
+  }
+  
+  /* Buttons */
+  .btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #F48FB1; /* Light Pink */
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .btn:hover {
+    transform: scale(1.05);
+    background-color: #F06292; /* Slightly darker pink on hover */
+  }
+  /* About Section */
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: #E0F7FA; /* Light Blue */
+  }
+  
+  /* Project Cards */
+  .project-card {
+    width: 300px;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+    background-color: #F48FB1; /* Light Pink on hover */
+  }
+  
+  .project-card h3 {
+    color: #F48FB1; /* Pink for titles */
+  }
+  
+  .project-card p {
+    color: #666;
+  }
+  
+  /* Resume Section */
+  .resume {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #E0F7FA; /* Light Blue */
+  }
+  
+  .resume-section {
+    background: #fff;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dark-mode .resume-section {
+    background: #222;
+    color: #eee;
+  }
+  /* Dark Mode */
+.dark-mode {
+    background-color: #01579B; /* Dark Blue */
+    color: #EEE;
+  }
+  
+  .dark-mode header {
+    background-color: #0288D1; /* Darker Blue for header */
+  }
+  
+  .dark-mode .nav-links li a {
+    color: #EEE;
+  }
+  
+  .dark-mode .logo {
+    color: #F48FB1; /* Light Pink Logo */
+  }
+  
+  /* Dark Mode for Buttons */
+  .dark-mode .btn {
+    background-color: #F48FB1; /* Light Pink */
+  }
+  
+  .dark-mode .btn:hover {
+    background-color: #F06292; /* Darker Pink on hover */
+  }
+  
+  /* Dark Mode for Sections */
+  .dark-mode .about {
+    background-color: #0288D1; /* Dark Blue */
+  }
+  
+  .dark-mode .project-card {
+    background: #333;
+    color: #fff;
+  }
+  
